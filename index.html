@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./cs/style.css">
+    <script src="https://kit.fontawesome.com/3c9e4520cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <p id="songNumber"></p>
+            <img src="./img/csc.jpg" class="song-img">
+            <h1 id="song-title">NO LOVE</h1>
+            <p id="song-artist">Shubh</p>
+            <audio id="song">
+                <source src="./song/y2mate.com - No Love Official Audio  Shubh.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div id="backward"><i class="fa-solid fa-backward"></i></div>
+                <div><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div id="forward"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="./java/app.js"></script>
+</body>
+
+</html>
